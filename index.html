@@ -10,6 +10,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> */
   <link rel="stylesheet" href="styles/base.css">
+  
+  <script src="scripts/getdates.js" defer></script>
+
 </head>
 <body>
 
@@ -45,11 +48,10 @@
 
   <footer>
     <p>
-      &copy; 2026
-      Keven Thia —
-      France
+      &copy; <span id="currentyear"></span>
+      Keven Thia — France
     </p>
-    <p>7/2/2026</p>
+    <p id="lastModified"></p>
   </footer>
 
 </body>
