@@ -1,0 +1,124 @@
+/* ==========================================================
+   Color schema
+   ========================================================== */
+:root {
+  /* colors */
+  --color-primary: #2c5f6f;      /* deep teal — header/footer */
+  --color-secondary: #e8a33d;    /* warm gold — accents, hover */
+  --color-background: #f7f5f0;   /* soft off-white — page bg */
+  --color-card-bg: #ffffff;
+  --color-text: #262626;
+  --color-text-light: #ffffff;
+
+  /* fonts */
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-background);
+  line-height: 1.6;
+}
+
+/* header */
+header {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  padding: 1rem 0;
+}
+
+#course-title {
+  display: block;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+nav a {
+  color: var(--color-text-light);
+  text-decoration: none;
+  font-weight: 600;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--color-secondary);
+  border-bottom-color: var(--color-secondary);
+}
+
+/* main */
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+main > h1 {
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: 0;
+}
+
+@media (min-width: 600px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+  main > h1 {
+    grid-column: 1 / -1;
+  }
+}
+
+.card {
+  background-color: var(--color-card-bg);
+  border-radius: 8px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.card h2 {
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+  margin-top: 0;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+  margin: 0.5rem 0;
+}
+
+/* footer */
+footer {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
