@@ -1,0 +1,48 @@
+/* temples-large.css — larger viewport overrides*/
+
+@media screen and (min-width: 700px) {
+
+  .site-header {
+    padding: 1.1rem 2rem;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .primary-nav {
+    display: block;
+    position: static;
+    background: none;
+  }
+
+  .primary-nav ul {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0;
+  }
+
+  .primary-nav a {
+    border-bottom: none;
+    border-radius: var(--radius);
+    padding: 0.5rem 1rem;
+  }
+
+  main {
+    max-width: 1100px;
+    padding: 3rem 2rem 4rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .temple-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+  }
+
+  .temple-grid img {
+    height: 260px;
+  }
+}

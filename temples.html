@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Album | Keven Thia</title>
+  <meta name="author" content="Keven Thia">
+  <meta name="description" content="A responsive photo album of temples of The Church of Jesus Christ of Latter-day Saints, built for WDD 131.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css">
+
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <p class="site-title">Temple Album</p>
+
+    <button id="hamburger" class="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <nav id="primary-nav" class="primary-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#old">Old</a></li>
+        <li><a href="#new">New</a></li>
+        <li><a href="#large">Large</a></li>
+        <li><a href="#small">Small</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Temples of the Church</h1>
+    <p class="lede">A small gallery of temples from around the world &mdash; a placeholder image stands in for each until real photographs are added.</p>
+
+    <div class="temple-grid">
+      <figure>
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Calgary_alberta_temple.jpg" alt="Calgary Alberta Temple" loading="lazy" width="400" height="300">
+        <figcaption>Calgary Alberta Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Calgary_alberta_temple.jpg" alt="Paris France Temple" loading="lazy" width="400" height="300">
+        <figcaption>Paris France Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Calgary_alberta_temple.jpg" alt="Salt Lake Temple" loading="lazy" width="400" height="300">
+        <figcaption>Salt Lake Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Calgary_alberta_temple.jpg" alt="Washington D.C. Temple" loading="lazy" width="400" height="300">
+        <figcaption>Washington D.C. Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Calgary_alberta_temple.jpg" alt="Denver Colorado Temple" loading="lazy" width="400" height="300">
+        <figcaption>Denver Colorado Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Calgary_alberta_temple.jpg" alt="Brigham City Temple" loading="lazy" width="400" height="300">
+        <figcaption>Brigham City Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Calgary_alberta_temple.jpg" alt="San Salvador El Salvador Temple" loading="lazy" width="400" height="300">
+        <figcaption>San Salvador El Salvador Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Calgary_alberta_temple.jpg" alt="Dallas Texas Temple" loading="lazy" width="400" height="300">
+        <figcaption>Dallas Texas Temple</figcaption>
+      </figure>
+
+      <figure>
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Calgary_alberta_temple.jpg" alt="Chicago Illinois Temple" loading="lazy" width="400" height="300">
+        <figcaption>Chicago Illinois Temple</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Keven Thia &mdash; France</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+</body>
+</html>
