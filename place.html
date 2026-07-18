@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Réunion | Keven Thia</title>
+  <meta name="author" content="Keven Thia">
+  <meta name="description" content="Discover La Réunion, a volcanic French island in the Indian Ocean — geography, climate, and culture. WDD 131 place page.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+  <header class="place-header">
+    <p class="brand">Keven Thia</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="temples.html">Temple Album</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+
+      <img
+        src="images\piton de la fournaise.webp"
+        alt="Glowing lava flow from the Piton de la Fournaise volcano, La Réunion"
+        width="1080" height="1080" loading="eager">
+      <div class="hero-text">
+        <h1>La Réunion</h1>
+        <p>A volcanic island in the Indian Ocean, and my family's home.</p>
+      </div>
+    </section>
+
+    <section class="intro">
+      <h2>About the Island</h2>
+      <p>La Réunion is an overseas department of France located east of Madagascar in the Indian Ocean. Formed by volcanic activity, the island is dominated by two great peaks: the active <strong>Piton de la Fournaise</strong> and the extinct giant <strong>Piton des Neiges</strong>, along with three collapsed calderas known as cirques. Rainforest-covered mountains, black-sand beaches, and coral reefs give the island an extraordinary range of landscapes packed into a small territory.</p>
+    </section>
+
+    <section class="flag-fact">
+      <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20Reunion.svg" alt="Unofficial flag of La Réunion" width="160" height="107" loading="lazy">
+      <dl>
+        <div>
+          <dt>Capital</dt>
+          <dd>Saint-Denis</dd>
+        </div>
+        <div>
+          <dt>Population</dt>
+          <dd>≈ 870,000</dd>
+        </div>
+        <div>
+          <dt>Official language</dt>
+          <dd>French</dd>
+        </div>
+        <div>
+          <dt>Currency</dt>
+          <dd>Euro (€)</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="weather">
+      <h2>Weather</h2>
+      <div class="weather-card">
+        <span class="weather-icon" aria-hidden="true"></span>
+        <img class="weather-icon-mobile" src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Weather-few-clouds.svg" alt="Partly cloudy weather icon" width="48" height="48">
+        <div class="weather-details">
+          <p><span class="label">Condition:</span> Warm and partly cloudy</p>
+          <p><span class="label">Temperature:</span> 24&deg;C</p>
+          <p><span class="label">Wind speed:</span> 15 km/h</p>
+          <p><span class="label">Wind chill:</span> <span id="windchill">Calculating&hellip;</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="culture">
+      <h2>Culture &amp; Life</h2>
+      <p>Réunionese culture blends French, African, Malagasy, Indian, and Chinese influences, visible in the island's Creole language, music, and cuisine. Dishes like <em>cari</em> (a Creole curry) and <em>rougail saucisse</em> are staples, and the island celebrates a lively Creole New Year. Hiking the cirques and climbing Piton de la Fournaise are among the most popular outdoor traditions, drawing visitors and locals alike into the volcanic interior.</p>
+    </section>
+
+  </main>
+
+  <footer class="place-footer">
+    <p>&copy; <span id="year"></span> Keven Thia &mdash; France</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+</body>
+</html>
